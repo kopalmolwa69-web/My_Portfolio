@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+            transition: 0.3s;
+        }
+        body{
+            background: black;
+            color:#103286;
+        }
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgb(204, 197, 197);
+            position:sticky;
+            top:0;
+            box-shadow:3 5px 12px rgba(0,0,0,0.08);
+        }
+        .logo{
+            font-size:22px;
+            font-weight:bold;
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:inherit;
+            font-size:15px;
+        }
+        
+
+       .hero{
+           display:flex;
+           align-items:center;
+           justify-content:center;
+           flex-direction:column;
+           text-align:center;
+           height:90vh;
+           padding:20px;
+        }
+
+        .hero img{
+           width:120px;
+           border-radius:50%;
+           margin-bottom:20px;
+           height:120px;
+        }
+
+        .hero h1{
+           font-size:45px;
+           margin-bottom:10px;
+        }
+
+        .hero span{
+           color:#3344db;
+        }
+
+        .hero p{
+           max-width:500px;
+           color:#666;
+           margin-bottom:20px;
+        }
+
+        .btn{
+           padding:12px 25px;
+           background:#3141d4;
+           color:white;
+           border-radius:6px;
+           text-decoration:none;
+        }
+
+
+        .Certification{
+           padding:70px 8%;
+        }
+
+        .section-title{
+           text-align:center;
+           font-size:30px;
+           margin-bottom:50px;
+        }
+
+        .Certification-grid{
+           display:grid;
+           grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+           gap:25px;
+        }
+
+        .card{
+           background:rgb(153, 147, 147);
+           padding:30px;
+           border-radius:12px;
+           box-shadow:0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card:hover{
+           transform:translateY(-8px);
+        }
+
+
+        .about{
+           background-color: rgb(0, 0, 0);
+           box-shadow: 5px 5px 20px rgb(60, 70, 209);
+           padding:70px 8%;
+           max-width:700px;
+           margin:auto;
+           text-align:center;
+
+        }
+        .Education{
+           background-color: rgb(0, 0, 0);
+           box-shadow: 5px 5px 20px rgb(60, 70, 209);
+           padding:80px 8%;
+           max-width:700px;
+           margin:auto;
+           text-align:center;
+
+        }
+
+
+        .contact{
+           padding:70px 8%;
+           text-align:center;
+        }
+
+        .social{
+           margin-top:15px;
+        }
+
+        .social a{
+           margin:10px;
+           font-size:20px;
+           text-decoration:none;
+        }
+
+
+        footer{
+           text-align:center;
+           padding:25px;
+           color:#777;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <nav>
+    <div class="logo">Kopal</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#Certification">Certification</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+   </nav> 
+   <section class="hero">
+
+    <img src="static/img/profile.jpeg" alt="profile">
+    
+    <h1>Hi I'm <span>Kopal Molwa</span></h1>
+    
+    <p>
+    I am the student at Parul University, currently pursuing a B.tech, CSE program with specialisation of Artificial Intelligence and Data Science.
+    </p>
+    
+    <a class="btn" href="#Certification">View My Work <i class="fa-solid fa-trophy"></i></a>
+    
+    </section>
+
+    
+
+    <section class="Education" id="education">
+     <br>
+        <h2 class="Section-title">Education</h2>
+        
+        <p>
+            I had completed my higher education and crrently pursuing a B.tech CSE program with specialisation of Artificial Intelligence and Data Science at parul institute of engineering and technology, Parul University, Vadodara. I had recerntly completed a trainig of HTML and CSS.
+        </p>
+
+    </section>
+
+    
+
+<section class="Certification" id="Certification">
+
+         <h2 class="section-title">Certification</h2>
+    
+         <div class="Certification-grid">
+    
+         <div class="card">
+         <h3>Tech Expo Event </h3>
+         <p>Created a responsive website with team.</p>
+         </div>
+    
+         <div class="card">
+    <h3>Science Day Event</h3>
+    <p>Created a project with team.</p>
+    </div>
+    
+    <div class="card">
+    <h3>Vadodara Hackathon</h3>
+    <p>Created a responsive website named paramedic with team .</p>
+    </div>
+    
+    <div class="card">
+    <h3>IPR Event</h3>
+    <p>Attended a IPR event held at our university by the government officer.</p>
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    
+    <!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <h2 class="section-title">About Me</h2>
+    
+    <p>Hello! My name is Kopal Molwa, and I am from Indore, Madhya Pradesh. I am currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Data Science. I have recently completed training in HTML and CSS, where I developed a strong foundation in web development and learned how to design structured and responsive web pages. I am passionate about technology and continuously strive to improve my skills in programming, web development, and emerging technologies. My goal is to build innovative digital solutions and expand my knowledge in AI, data science, and modern web technologies. I am eager to work on real-world projects, collaborate with others, and grow as a developer while contributing to impactful technological advancements.
+       </p>
+    
+    </section>
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact</h2>
+        
+        <p>Email: kopalmolwa69@gmail.com</p>
+        <p>Phone: +91 9399315562 </p>
+        
+        <div class="social">
+        
+        <a href="https://www.linkedin.com/feed/">🌐</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#">📞</a>
+        <footer>@2026 Kopal Portfolio</footer>
+</body>
+</html>
